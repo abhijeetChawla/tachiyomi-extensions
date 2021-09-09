@@ -25,7 +25,7 @@ class MangaCatalogGenerator : ThemeSourceGenerator {
         SingleLang("Read Attack on Titan Shingeki no Kyojin Manga", "https://ww7.readsnk.com", "en", className = "ReadAttackOnTitanShingekiNoKyojinManga", overrideVersionCode = 2),
         SingleLang("Read Berserk Manga", "https://readberserk.com", "en"),
         SingleLang("Read Fairy Tail & Edens Zero Manga Online", "https://ww4.readfairytail.com", "en", className = "ReadFairyTailEdensZeroMangaOnline", overrideVersionCode = 1),
-        SingleLang("Read One Piece Manga Online", "https://ww8.readonepiece.com", "en"),
+        SingleLang("Read One Piece Manga Online", "https://ww8.readonepiece.com", "en",  overrideVersionCode = 2),
         SingleLang("Read Dr. Stone Manga Online", "https://ww3.readdrstone.com", "en", className = "ReadDrStoneMangaOnline"),
         SingleLang("Read Chainsaw Man Manga Online", "https://ww1.readchainsawman.com", "en"),
         SingleLang("Read Dragon Ball Super Chou Manga Online", "https://ww6.dbsmanga.com", "en", className = "ReadDragonBallSuperChouMangaOnline", overrideVersionCode = 1),

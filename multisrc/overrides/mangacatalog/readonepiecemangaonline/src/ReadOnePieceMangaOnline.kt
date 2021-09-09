@@ -17,4 +17,9 @@ class ReadOnePieceMangaOnline : MangaCatalog("Read One Piece Manga Online", "htt
         Pair("Databook", "$baseUrl/manga/one-piece-databook/"),
         Pair("Ace's Story Manga", "$baseUrl/manga/one-piece-ace-story-manga/"),
     ).sortedBy { it.first }.distinctBy { it.second }
+    override fun pageListParse(document: Document): List<Page> = mutableListOf<Page>().apply {
+        document.select(".text-center>img").forEach { img ->
+            add(Page(size, "", img.attr("src")))
+        }
+    }
 }
